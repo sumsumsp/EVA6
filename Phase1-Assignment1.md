@@ -62,7 +62,7 @@ n=99
  We need perform 3x3 convolutions 99 times to reach 1x1
  
  
- 1	199x199	| 3x3 > 197x197
+1	199x199	| 3x3 > 197x197
 2	197x197	| 3x3 > 195x195
 3	195x195	| 3x3 > 193x193
 4	193x193	| 3x3 > 191x191
