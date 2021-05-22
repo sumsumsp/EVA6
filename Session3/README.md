@@ -9,15 +9,15 @@
     2) the "sum" of this number with the random number that was generated and sent as the input to the network
     ![network](https://cdn.inst-fs-iad-prod.inscloudgate.net/1af0cd6a-b92b-4c38-abad-77a5d54129c7/assign.png?token=eyJhbGciOiJIUzUxMiIsInR5cCI6IkpXVCIsImtpZCI6ImNkbiJ9.eyJyZXNvdXJjZSI6Ii8xYWYwY2Q2YS1iOTJiLTRjMzgtYWJhZC03N2E1ZDU0MTI5YzcvYXNzaWduLnBuZyIsInRlbmFudCI6ImNhbnZhcyIsInVzZXJfaWQiOiI3MDAwMDAyMzcyNDEzNCIsImlhdCI6MTYyMTY2NjgwMiwiZXhwIjoxNjIxNzUzMjAyfQ.xvUFwPHaT6d-0nVrRBLP1XhaiZrByCz_bI3fjmgfzhN_kzyO5zky34uRTIEbC4LSYHn6SLMfVIK6PjDBT-o8EA&download=1&content_type=image%2Fpng)
 
-### Implementation
-##### 1) Data preparation
+## Implementation
+### 1) Data preparation
     a) To prepare random number dataset torch.randint is used as it gives similar count of each number
     b) 2 lists are of size of mnist trainset and testset are created 
     c) In custom dataloader same index form minist and random list are returned
     d) getitem returns (mnist_image, mnist_label, random_number_one_hot_encoded, sum_of_mnist_label_and_random_number)
 
-##### 2) Model
-a) Model Graph
+### 2) Model
+#### a) Model Graph
 Net(
   * (conv1): Conv2d(1, 32, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
   * (conv2): Conv2d(32, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
@@ -34,19 +34,19 @@ Net(
   * (fc2): Linear(in_features=128, out_features=18, bias=True)
 )
 
-b) inputs (mnist and random number one hot encoded)
+#### b) inputs (mnist and random number one hot encoded)
 1) mnist image passes through convolution layers 
 2) last convolutuion later is concatenated with one hot encoded random number and passes through dense layers
 
-c) outputs
+#### c) outputs
 1) log_softmax of last convlayer is output of mnist prediction
 2) log_softmax of last dense layer is output of sum prediction
     
-d) loss   
+#### d) loss   
 1) Crossentropy loss is used for both minst and sum as the result is in range of 0 and 9 for mnist and 0 and 18 for sum
 2) total_loss is average of both losses
 
-e) logs and evaluation
+#### e) logs and evaluation
 
 Model reached 99% accuracy for test dataset for both mnist and sum in 3 epochs
 
