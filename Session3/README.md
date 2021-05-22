@@ -99,3 +99,11 @@ Test set: Average loss: 430.1920, Mnist_Accuracy: 9902/10000 (99%), Sum_Accuracy
 Epoch 10
 loss=0.00295666023157537 batch_id=1874: 100%|██████████| 1875/1875 [00:26<00:00, 70.96it/s]
 Test set: Average loss: 279.5039, Mnist_Accuracy: 9932/10000 (99%), Sum_Accuracy: 9920/10000 (99%)
+
+### References
+    * https://rosenfelder.ai/multi-input-neural-network-pytorch/
+    * https://arxiv.org/ftp/arxiv/papers/2005/2005.08419.pdf
+    * https://medium.com/jdsc-tech-blog/multioutput-cnn-in-pytorch-c5f702d4915f
+    * https://discuss.pytorch.org/t/a-model-with-multiple-outputs/10440/28
+    * https://machinelearningmastery.com/deep-learning-models-for-multi-output-regression/
+    * https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=&cad=rja&uact=8&ved=2ahUKEwi24_GU19nwAhX-qksFHaEBDB0QFjAMegQIFxAD&url=https%3A%2F%2Fwww.mdpi.com%2F2073-8994%2F12%2F9%2F1526%2Fpdf&usg=AOvVaw0OPI6QOWj_6j-RQeHV7eGV
