@@ -7,7 +7,7 @@
 2) and gives two outputs:
     1) the "number" that was represented by the MNIST image, and
     2) the "sum" of this number with the random number that was generated and sent as the input to the network
-    ![network](https://cdn.inst-fs-iad-prod.inscloudgate.net/1af0cd6a-b92b-4c38-abad-77a5d54129c7/assign.png?token=eyJhbGciOiJIUzUxMiIsInR5cCI6IkpXVCIsImtpZCI6ImNkbiJ9.eyJyZXNvdXJjZSI6Ii8xYWYwY2Q2YS1iOTJiLTRjMzgtYWJhZC03N2E1ZDU0MTI5YzcvYXNzaWduLnBuZyIsInRlbmFudCI6ImNhbnZhcyIsInVzZXJfaWQiOiI3MDAwMDAyMzcyNDEzNCIsImlhdCI6MTYyMTY2NjgwMiwiZXhwIjoxNjIxNzUzMjAyfQ.xvUFwPHaT6d-0nVrRBLP1XhaiZrByCz_bI3fjmgfzhN_kzyO5zky34uRTIEbC4LSYHn6SLMfVIK6PjDBT-o8EA&download=1&content_type=image%2Fpng)
+<img src=https://cdn.inst-fs-iad-prod.inscloudgate.net/1af0cd6a-b92b-4c38-abad-77a5d54129c7/assign.png?token=eyJhbGciOiJIUzUxMiIsInR5cCI6IkpXVCIsImtpZCI6ImNkbiJ9.eyJyZXNvdXJjZSI6Ii8xYWYwY2Q2YS1iOTJiLTRjMzgtYWJhZC03N2E1ZDU0MTI5YzcvYXNzaWduLnBuZyIsInRlbmFudCI6ImNhbnZhcyIsInVzZXJfaWQiOiI3MDAwMDAyMzcyNDEzNCIsImlhdCI6MTYyMTY2NjgwMiwiZXhwIjoxNjIxNzUzMjAyfQ.xvUFwPHaT6d-0nVrRBLP1XhaiZrByCz_bI3fjmgfzhN_kzyO5zky34uRTIEbC4LSYHn6SLMfVIK6PjDBT-o8EA&download=1&content_type=image%2Fpng></>
 
 ### Implementation
 ##### 1) Data preparation
