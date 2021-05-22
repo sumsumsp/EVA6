@@ -11,10 +11,10 @@
 
 ### Implementation
 ##### 1) Data preparation
-a) To prepare random number dataset torch.randint is used as it gives similar count of each number
-b) 2 lists are of size of mnist trainset and testset are created 
-c) In custom dataloader same index form minist and random list are returned
-d) getitem returns (mnist_image, mnist_label, random_number_one_hot_encoded, sum_of_mnist_label_and_random_number)
+    a) To prepare random number dataset torch.randint is used as it gives similar count of each number
+    b) 2 lists are of size of mnist trainset and testset are created 
+    c) In custom dataloader same index form minist and random list are returned
+    d) getitem returns (mnist_image, mnist_label, random_number_one_hot_encoded, sum_of_mnist_label_and_random_number)
 
 ##### 2) Model
 a) Model Graph
