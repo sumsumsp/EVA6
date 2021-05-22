@@ -43,12 +43,12 @@ c) outputs
 2) log_softmax of last dense layer is output of sum prediction
     
 d) loss   
-Crossentropy loss is used for both minst and sum as the result is in range of 0 and 9 for mnist and 0 and 18 for sum
-total_loss is average of both losses
+1) Crossentropy loss is used for both minst and sum as the result is in range of 0 and 9 for mnist and 0 and 18 for sum
+2) total_loss is average of both losses
 
 e) logs and evaluation
 
-Model reached 99% accuracy for test dataset for both mnist and sum
+Model reached 99% accuracy for test dataset for both mnist and sum in 3 epochs
 
 Epoch 1
 /usr/local/lib/python3.7/dist-packages/ipykernel_launcher.py:37: UserWarning: Implicit dimension choice for log_softmax has been deprecated. Change the call to include dim=X as an argument.
