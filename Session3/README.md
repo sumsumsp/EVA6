@@ -19,19 +19,19 @@ d) getitem returns (mnist_image, mnist_label, random_number_one_hot_encoded, sum
 ##### 2) Model
 a) Model Graph
 Net(
-  (conv1): Conv2d(1, 32, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
-  (conv2): Conv2d(32, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
-  (pool1): MaxPool2d(kernel_size=2, stride=2, padding=0, dilation=1, ceil_mode=False)
-  (pintconv1): Conv2d(64, 16, kernel_size=(1, 1), stride=(1, 1))
-  (conv3): Conv2d(16, 32, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
-  (conv4): Conv2d(32, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
-  (pool2): MaxPool2d(kernel_size=2, stride=2, padding=0, dilation=1, ceil_mode=False)
-  (pintconv2): Conv2d(64, 16, kernel_size=(1, 1), stride=(1, 1))
-  (conv5): Conv2d(16, 32, kernel_size=(3, 3), stride=(1, 1))
-  (conv6): Conv2d(32, 64, kernel_size=(3, 3), stride=(1, 1))
-  (conv7): Conv2d(64, 10, kernel_size=(3, 3), stride=(1, 1))
-  (fc1): Linear(in_features=20, out_features=128, bias=True)
-  (fc2): Linear(in_features=128, out_features=18, bias=True)
+  |(conv1): Conv2d(1, 32, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+  |(conv2): Conv2d(32, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+  |(pool1): MaxPool2d(kernel_size=2, stride=2, padding=0, dilation=1, ceil_mode=False)
+  |(pintconv1): Conv2d(64, 16, kernel_size=(1, 1), stride=(1, 1))
+  |(conv3): Conv2d(16, 32, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+  |(conv4): Conv2d(32, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+  |(pool2): MaxPool2d(kernel_size=2, stride=2, padding=0, dilation=1, ceil_mode=False)
+  |(pintconv2): Conv2d(64, 16, kernel_size=(1, 1), stride=(1, 1))
+  |(conv5): Conv2d(16, 32, kernel_size=(3, 3), stride=(1, 1))
+  |(conv6): Conv2d(32, 64, kernel_size=(3, 3), stride=(1, 1))
+  |(conv7): Conv2d(64, 10, kernel_size=(3, 3), stride=(1, 1))
+  |(fc1): Linear(in_features=20, out_features=128, bias=True)
+  |(fc2): Linear(in_features=128, out_features=18, bias=True)
 )
 
 b) inputs (mnist and random number one hot encoded)
@@ -47,6 +47,7 @@ Crossentropy loss is used for both minst and sum as the result is in range of 0 
 total_loss is average of both losses
 
 e) logs and evaluation
+
 Model reached 99% accuracy for test dataset for both mnist and sum
 
 Epoch 1
