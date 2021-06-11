@@ -1,4 +1,4 @@
-def fit(model, device, epochs, train, test, train_loader, test_loader, optimizer, learning_rate, momentum, weight_decay):
+def fit(model, device, epochs, train, test, train_loader, test_loader, optimizer, learning_rate, momentum, weight_decay=0, lambda_l1=None):
     train_loss_list = []
     test_loss_list = []
     train_accuracy_list=[]
@@ -8,7 +8,7 @@ def fit(model, device, epochs, train, test, train_loader, test_loader, optimizer
 
     for epoch in range(epochs):
         print(f"Epoch {epoch+1}")
-        train_loss,train_acc = train(model, device, train_loader, optimizer, epoch)
+        train_loss,train_acc = train(model, device, train_loader, optimizer, epoch, lambda_l1)
         test_loss,test_acc = test(model, device, test_loader)
 
         train_loss_list.append(train_loss)
