@@ -1,7 +1,7 @@
 import torch.nn.functional as F
 from tqdm import tqdm
 
-def train(model, device, train_loader, optimizer, epoch):
+def train(model, device, train_loader, optimizer, epoch, lambda_l1 = None):
     model.train()
     pbar = tqdm(train_loader)
     train_loss = 0
@@ -12,7 +12,12 @@ def train(model, device, train_loader, optimizer, epoch):
         optimizer.zero_grad()
         output = model(data)
         loss = F.nll_loss(output, target) 
-        train_loss += loss.item()       
+        train_loss += loss.item()    
+        if lambda_l1:
+            l1 = 0
+            for p in model.parameters():
+                l1 = l1 + p.abs().sum()
+            loss = loss + lambda_l1 * l1 
         loss.backward()
         optimizer.step()
         
