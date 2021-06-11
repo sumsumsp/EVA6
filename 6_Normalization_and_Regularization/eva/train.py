@@ -12,12 +12,13 @@ def train(model, device, train_loader, optimizer, epoch, lambda_l1 = None):
         optimizer.zero_grad()
         output = model(data)
         loss = F.nll_loss(output, target) 
-        train_loss += loss.item()    
+            
         if lambda_l1:
             l1 = 0
             for p in model.parameters():
                 l1 = l1 + p.abs().sum()
-            loss = loss + lambda_l1 * l1 
+            loss = loss + lambda_l1 * l1
+        train_loss += loss.item()
         loss.backward()
         optimizer.step()
         
