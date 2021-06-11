@@ -1,10 +1,10 @@
-def fit(model, device, epochs, train, test, train_loader, test_loader, optimizer, learning_rate, momentum):
+def fit(model, device, epochs, train, test, train_loader, test_loader, optimizer, learning_rate, momentum, weight_decay):
     train_loss_list = []
     test_loss_list = []
     train_accuracy_list=[]
     test_accuracy_list=[]
 
-    optimizer = optimizer(model.parameters(), lr=learning_rate, momentum=momentum)
+    optimizer = optimizer(model.parameters(), lr = learning_rate, momentum = momentum, weight_decay = weight_decay)
 
     for epoch in range(epochs):
         print(f"Epoch {epoch+1}")
